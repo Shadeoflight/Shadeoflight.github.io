@@ -1,174 +1,87 @@
 
-<!DOCTYPE html>
-<!-- Created by Joshua Wu - 2017-->
-<!-- Inspiration for design from https://zaclem01.github.io/ -->
+<html>
 
 <head>
-	<meta charset="UTF-8">
-	<meta lang="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Portfolio of Shadeoflight</title>
-	<link href="style.css" rel="stylesheet">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 	
-	<!-- Slick stylesheets -->
-	<link rel="stylesheet" type="text/css" href="./slick/slick.css">
-	<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+	<meta name="language" content="en-us" />
+	<meta name="distribution" content="Global" />
+	<meta name="rating" content="General" />
+	<meta name="author" content="Joshua Wu" />
 	
-	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-	<script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
+	<meta name="description" content="Joshua Wu: mobile and web application development, college student" />
+	<meta name="keywords" content="joshua wu ios android computer science" />
+
+	<title>Home - Joshua Wu</title>
+	<link rel="icon" href="favicon.png">
+	
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
 </head>
+
 <body>
-	<!-- Navigation Bar -->
 	<nav class="siteNav">
-		<a class="siteNav_brand js-scroll-trigger" href="">Shadeoflight</a>
-		<ul class="siteNav_nav">
-			<li class="siteNav_nav_item"><a class="nav-link js-scroll-trigger" href="#projectsSection">Projects</a></li>
-			<li class="siteNav_nav_item"><a class="nav-link js-scroll-trigger" href="#skillsSection">Skills</a></li>
-			<li class="siteNav_nav_item"><a class="nav-link js-scroll-trigger" href="#aboutSection">About</a></li>
-			<li class="siteNav_nav_item"><a class="nav-link js-scroll-trigger" href="#contactSection">Contact</a></li>
-		</ul>
+		<h1>Joshua Wu</h1>
+		<div class="siteNav_nav_buttons">
+		<div id="links">
+			<a class="siteNav_nav_item" href="#aboutSection">About</a>
+			<a class="siteNav_nav_item" href="https://github.com/Shadeoflight">Github</a>
+			<a class="siteNav_nav_item" href="https://www.linkedin.com/in/joshua-wu-820448114/">Linkedin</a>	
+		</div>
+		</div>
 		<button class="siteNav_menuBtn">Menu</button>
 	</nav>
-	<div class="content">
-		<div class="hero sectionContainer hero-image">
-			<div class="hero_intro u-centeredText">
-				<span class="hero_intro_name">Shadeoflight</span>
-				<hr class="hero_intro_divider divider">
-				<span class="hero_intro_tagline tagline">App Developer - Student - Gamer</span>
-			</div>
-		</div>
-		
-		<!-- Section transition gradient -->
-		<section class="transition transition-1"></section>
-		
-		<!-- Projects -->
-		<section class="projects sectionContainer" id="projectsSection">
-			<header class="projects_header u-centeredText">
-				<h1 class="projects_header_name sectionName">Projects</h1>
-				<hr class="projects_header_divider divider">
-				<span class="projects_header_tagline tagline">Take a look at what I've done so far</span>
-			</header>
-			<div class="projects_content">
-				<div class="projects_content_projectSlide">
-					<a href="https://github.com/Shadeoflight/CameraCrypt">
-						<img class="projectSlide_img" src="images/no_image_available.png">
-						<div class="projectSlide_title">CameraCrypt</div>
-					</a>
-				</div>
-				<div class="projects_content_projectSlide">
-					<a href="https://github.com/Shadeoflight/TouchBarPractice">
-						<img class="projectSlide_img" src="images/no_image_available.png">
-						<div class="projectSlide_title">TouchBarPractice</div>
-					</a>
-				</div>
-				<div class="projects_content_projectSlide">
-					<a href="https://github.com/Shadeoflight/OpenCVPractice" target="_blank">
-						<img class="projectSlide_img" src="images/no_image_available.png">
-						<div class="projectSlide_title">OpenCVPractice</div>
-					</a>
-				</div>
-				<div class="projects_content_projectSlide">
-					<a href="https://github.com/Shadeoflight/MyBusAppProject" target="_blank">
-						<img class="projectSlide_img" src="images/no_image_available.png">
-						<div class="projectSlide_title">MyBusAppProject</div>
-					</a>
-				</div>
-			</div>
-			
-			<!-- Carousel script -->
-			<script type="text/javascript">
-				$(document).on('ready', function() {
-					$(".projects_content").slick({
-						dots: true,
-						infinite: true,
-						centerMode: true,
-						slidesToShow: 3,
-						slidesToScroll: 3
-					});
-				});
-			</script>
-			
-		</section>
-		<!-- Skills -->
-		<section class="skills sectionContainer" id="skillsSection">
-			<header class="skills_header u-centeredText">
-				<h1 class="skills_header_name sectionName">Skills</h1>
-				<hr class="skills_header_divider divider">
-			</header>
-			<div class="skills_content skill_align">
-				<button class="skill_button" role="button">C++</button>
-				<button class="skill_button" role="button">Java</button>
-				<button class="skill_button" role="button">JavaScript</button>
-			</div>
-			<div class="skills_content skill_align">
-				<button class="skill_button" role="button">Python</button>
-				<button class="skill_button" role="button">Swift</button>
-				<button class="skill_button" role="button">Objective-C</button>
-			</div>
-			<div class="skills_content skill_align">
-				<button class="skill_button" role="button">C</button>
-				<button class="skill_button" role="button">MATLAB</button>
-				<button class="skill_button" role="button">Haskell</button>
-			</div>
-		</section>
-		
-		<!-- About -->
-		<section class="about sectionContainer" id="aboutSection">
-			<header class="about_header u-centeredText">
-				<h1 class="about_header_name sectionName">About Me</h1>
-				<hr class="about_header_divider divider">
-			</header>
-			<div class="about_content">
-				<div class="about_content_description">
-					<p class="descriptionText u-emphasis">Hi! I'm Shadeoflight!</p>
-					<p class="descriptionText"> I am a computer science student at the University of Kansas.
-					</p>
-					<p class="descriptionText"> Outside of being a student, you will probably see that I game, read Reddit, and do some programming.
-					</p>
-					<p class="descriptionText">
-						Feel free to contact me through the forms below.
-					</p>
-				</div>
-				<!-- Profile image -->
-				<div class="about_content_profileImg"><img src="">
-				</div>
-			</div>
-		</section>
-		<!-- Contact -->
-		<section class="contact sectionContainer" id="contactSection">
-			<header class="contact_header u-centeredText">
-				<h1 class="contact_header_name sectionName">Contact</h1>
-				<hr class="contact_header_divider divider">
-			</header>
-			<div class="contact_content">
-				<form class="contact_content_email" action="mailto:joshuawu777@gmail.com?subject=Email%20from%your%portfolio" method="POST" enctype="text/plain"><input class="email_emailName" type="text" name="Email" placeholder="Email">
-				<input class="email_name" type="text" name="Name" placeholder="Your Name">
-				<textarea class="email_messageArea" name="Body" placeholder="Message (sent as plain text, please do not include sensitive information)"></textarea>
-				<button class="email_submit" type="submit" value="send">Send</button></form>
-				<div class="contact_content_social">
-					<div class="social_icon">
-						<a href="https://github.com/Shadeoflight"><img class="social_icon_img" src="images/GitHub_Logo_White.png"></a>
-					</div>
-					<div class="social_icon">
-						<a href="https://www.linkedin.com/in/joshua-wu-820448114/"><img class="social_icon_img" src="images/Logo-White-41px-R.png"></a>
-					</div>
-				</div>
-			</div>
-		</section>
+	
+	<div class="container" id="header">
 	</div>
 	
-	<footer class="siteFooter">
-		<span class="siteFooter_name">Shadeoflight &copy; 2017</span>
+	<div class="content">
+		<div class="main_title section_container">
+			<div class="u-centeredText">
+				<span class="main_intro_name">Joshua Wu</span>
+				<hr class="main_intro_divider divider">
+				<span class="tagline">App Developer - Student - Gamer</span>
+			</div>
+		</div>
+	</div>
+	
+	<!-- About -->
+	<section class="section_container about_buffer_zone" id="aboutSection">
+		<header class="about_header u-centeredText">
+			<h1 class="section_name">About Me</h1>
+			<hr class="divider"></hr>
+		</header>
+		<div class="about_content">
+			<div class="about_content_description">
+				<p class="descriptionText u-emphasis">Hi! I'm Joshua Wu (Shadeoflight)!</p>
+				<p class="descriptionText"> I'm a computer science student at the University of Kansas.
+				</p>
+				<p class="descriptionText"> Outside of being a student, you will probably see that I game, read Reddit, and do some "random" programming.
+				</p>
+				<p class="descriptionText">
+					Feel free to contact me through Linkedin!
+				</p>
+			</div>
+			<!-- Profile image -->
+			<div class="about_content_profileImg"><img src="profilepic.jpg">
+			</div>
+		</div>
+	</section>
+	
+	<footer class="site_footer">
+		<span class="site_footer_name">Joshua Wu &copy; 2017</span>
 	</footer>
 	
-	<!-- Bootstrap core JavaScript -->
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom JavaScript for this theme -->
-    <script src="js/scrolling-nav.js"></script>
-	
+			
 </body>
+
+
+
+
+
+
+
+
+

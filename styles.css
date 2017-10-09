@@ -1,0 +1,275 @@
+
+body{
+	font-family: 'Press Start 2P', cursive;
+	font-size: 15px;
+}
+
+.container {
+	padding: 1em 20em 0 20em;
+}
+
+/*
+	Miscellaneous attributes
+*/
+.u-centeredText {
+    text-align: center
+}
+.u-emphasis {
+    color: #fe5621;
+    font-weight: 700
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+/*
+	Main page
+*/
+
+.siteNav {
+	align-items: center;
+    background: white;
+    /*border-bottom: 3px solid #585858;*/
+    display: flex;
+	/*margin-top: 2em;*/
+    height: 20vh;
+    justify-content: space-around;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+	padding: 1em 20em 0 20em;
+}
+
+/* Used as a buffer zone */
+#header {
+	margin-top: 7em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+#links {
+	margin-top: 1em;
+	display: flex;
+	flex-direction: row;
+}
+#links a {
+	margin-right: 1em;
+}
+
+/*
+	Main page - content
+*/
+.content {
+    margin-top: 12vh
+}
+
+.main_title {
+	min-height: 75vh;
+    position: relative
+}
+
+/*
+	Content stuff - MOVE CODE
+*/
+.section_container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 30vh;
+    justify-content: center;
+    padding: 7vh 0
+}
+.section_name {
+    font-size: 3em;
+    font-weight: 700;
+    margin: 0
+}
+
+.main_intro_name {
+    font-size: 5em;
+    font-weight: 700
+}
+
+/*
+	Main page - divider
+*/
+
+.main_intro_divider,
+.main_intro_divider:after,
+.main_intro_divider:before {
+    border-color: #000000
+}
+
+.divider {
+    border-width: 2px;
+    border-style: solid;
+    margin: 25px auto;
+    position: relative;
+    width: 25vw
+}
+
+/*
+	Main page - title subtitle/tagline
+*/
+
+.tagline {
+    font-size: 1.75em
+}
+
+/*
+	About section
+*/
+.about_header
+{
+	margin-top: 17vh;
+}
+
+.about_buffer_zone {
+	margin-top: 25vh;
+}
+
+.about_content {
+    display: flex;
+    margin-top: 3vh;
+	margin-bottom: 7vh;
+    width: 80%;
+}
+
+.about_content_description {
+    flex: 1
+}
+
+.descriptionText {
+    color: black;
+    font-size: 18px
+}
+
+.about_content_profileImg {
+    flex: 1;
+    text-align: center
+}
+.about_content_profileImg img {
+    border: 3px solid #000000;
+    border-radius: 5%;
+    max-height: 300px;
+    max-width: 100%
+}
+
+/*
+	Footer section
+*/
+
+.site_footer {
+    height: 5vh;
+    width: 100%;
+	text-align: center;
+	background-color: white;
+	margin-top: 25vh;
+	margin-bottom: 5vh;
+}
+
+.site_footer_name {
+    font-size: 1.0em;
+    color: black;
+    line-height: 10vh;
+}
+
+/*
+	Screen adaptability
+*/
+@media screen and (max-width: 640px) {
+    .section_container {
+        padding: 3vh
+    }
+}
+
+.siteNav_menuBtn {
+    background: #fe5621;
+    border: 0;
+    color: #fefefe;
+	font-size: 2em;
+    display: none;
+	margin-right: 10vh;
+}
+
+@media screen and (max-width: 660px) {
+	.siteNav {
+		align-items: center;
+		background: white;
+		/*border-bottom: 3px solid #585858;*/
+		display: flex;
+		/*margin-top: 2em;*/
+		height: 20vh;
+		justify-content: space-around;
+		left: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+		z-index: 1;
+		padding: 1em 20em 0 50%;
+	}
+    .siteNav_nav_buttons{
+        display: none
+    }
+	.siteNav_menuBtn {
+        display: block
+    }
+    .js-responsive .siteNav_nav_buttons{
+        background: white;
+        border-bottom: 2px solid #bcbcbc;
+        border-top: 2px solid #bcbcbc;
+        display: block;
+        float: left;
+        left: 0;
+        line-height: normal;
+        margin: 0;
+        padding: 2vh 0 2vh 24px;
+        position: absolute;
+        right: 0;
+        top: 15vh
+    }
+    .js-responsive .siteNav_nav_item{
+        border-left: 4px solid #fe5621;
+        display: block;
+        margin: 1vh 0;
+        padding-left: 10px;
+        text-align: left
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .about,
+    .main_title {
+        padding: 3vh
+    }
+    .about_content {
+        flex-direction: column-reverse;
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 640px) {
+	h1 {
+		text-align: center;
+		font-size: 1em;
+		margin: 0 2em;
+	}
+	.container{
+		width: 0%;
+		padding: 0;
+	}
+	.main_intro_name {
+		font-size: 3em;
+	}
+	
+	footer {
+		display: block;
+	}
+}
+
